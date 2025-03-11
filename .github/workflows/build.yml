@@ -33,3 +33,7 @@ jobs:
       - env:
           MSYS2_LOCATION: ${{ steps.msys2.outputs.msys2-location }}
         run: echo "$env:MSYS2_LOCATION"
+      - name: crlf
+        shell: cmd
+        run: |
+          dir
