@@ -5,7 +5,7 @@ echo start
 echo %test%
 if %test% neq 1 (
 set /a test=test+1
-goto start
+call :start
 )
 
 goto :end
