@@ -15,4 +15,4 @@ echo WHY
 :end
 echo end
 
-goto exit
+goto :EOF
