@@ -11,6 +11,10 @@ jobs:
         os: [windows-latest, windows-2019,windows-2025]
     runs-on: ${{ matrix.os }}
     steps:
+      - name: crlf
+        shell: cmd
+        run: |
+          git config --system core.autocrlf false
       - name: Checkout
         uses: actions/checkout@v3 
         with:
