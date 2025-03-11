@@ -8,9 +8,11 @@ set /a test=test+1
 goto start
 )
 
-goto end
+goto :end
 
 echo WHY
 
 :end
 echo end
+
+goto exit
