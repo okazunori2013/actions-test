@@ -1,0 +1,25 @@
+From d7d9db042d3dc14351444edcf07e6f8b57e7e1ec Mon Sep 17 00:00:00 2001
+From: okazunotri2013 <92250924+okazunori2013@users.noreply.github.com>
+Date: Fri, 21 Mar 2025 03:42:35 +0900
+Subject: [PATCH] use cuda
+
+---
+ libvmaf/include/libvmaf/meson.build | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/libvmaf/include/libvmaf/meson.build b/libvmaf/include/libvmaf/meson.build
+index c8927a70..a568f950 100644
+--- a/libvmaf/include/libvmaf/meson.build
++++ b/libvmaf/include/libvmaf/meson.build
+@@ -16,7 +16,7 @@ if is_cuda_enabled
+ endif
+ 
+ # install headers
+-install_headers(['libvmaf.h',
++install_headers(['libvmaf_cuda.h',
+                 'feature.h',
+                 'model.h',
+                 'picture.h'],
+-- 
+2.47.1.windows.2
+
